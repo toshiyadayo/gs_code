@@ -42,7 +42,7 @@ if($status==false) {
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <style>div{padding: 10px;font-size:16px;}</style> -->
 <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/oka1.css">
+<link rel="stylesheet" href="css/oka.css">
 </head>
 <body id="main">
 
