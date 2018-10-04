@@ -1,0 +1,324 @@
+@charset "utf-8";
+
+html{
+    font-size: 70.5%;
+    height: auto;
+}
+
+body{
+    color: #333333;
+    font-family: "open sans","ヒラギノ丸ゴ ProN";
+    font-size: 1.6rem;
+}
+/* h2{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+} */
+img{
+    max-width: 100%;
+}
+
+.site-title{
+    font-size: 50px;
+    font-weight: bold;
+    color: #ff1a5f;
+}
+
+
+/*header*/
+.header{
+    background-color: rgb(235, 150, 135);
+}
+
+.header-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;
+}
+
+.btn-trigger{
+    display: none;
+}
+
+
+
+
+/*about*/
+.about2{
+    padding: 20px 0 ;
+}
+
+.profile-wrapper{
+    width: 560px;
+    margin: auto;
+}
+
+.profile__title{
+    margin: 0 0 40px;
+}
+
+.profile__eyecatch{
+    margin: 0 0 24px;
+}
+
+.profile__name{
+    margin: 0 0 40px;
+}
+
+.profile__text{
+    line-height: 2;
+    text-align: justify;
+    /* text-align:inter-deograph; */
+}
+
+
+.text-center{
+    text-align: center;
+    
+}
+
+/*始める*/
+.btn{
+    display: block;
+    width: 120px;
+    margin: auto;
+    padding: 21px 0;
+    border: none;
+    background-color: rgb(190, 186, 186);
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.btn2{
+    display: block;
+    width: 80px;
+    margin: auto;
+    padding: 10px 0;
+    border: none;
+    background-color: #6e6c70;
+    color: rgb(255, 251, 251);
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+.btn3{
+    display: block;
+    width: 300px;
+    margin: auto;
+    padding: 100px 0;
+    border: none;
+    background-color: #ff1a5f;
+    color: #fff;
+    font-size: 4.0rem;
+    text-align: center;
+}
+
+.btn-submit{
+    line-height: 1;
+}
+
+/*使い方*/
+.how{
+    padding: 80px 0 0 ;
+    background-color: #f4f4f4;
+}
+
+
+
+.works__title{
+    margin: 0 0 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.works__list{
+    display: flex;
+    margin: 0 0 64px;
+}
+.works__item{
+    width: 33.333%;
+}
+
+.works__eyecatch{
+    margin: 0 0 24px;
+}
+.works__contents{
+    padding: 0 16px;
+}
+
+.works__heading{
+    margin: 0 0 16px;
+}
+.works__heading{
+    margin: 0 0 16px;
+    font-weight: bold;
+    line-height: 1.75;
+}
+
+
+
+
+@media screen and (max-width:640px){
+    /*----------
+    （TOPページ）
+    ----------*/
+
+        /*----------
+        ヘッダー
+        ----------*/
+    .header{
+        padding:10px;
+        background: rgb(235, 150, 135);
+    }
+    .sp-header-nav{
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+    overflow: hidden;
+    height: 44px;
+    line-height: 42px;
+    -webkit-overflow-scrolling: touch;
+    }
+    .sp-header.has-search-nav .sp-header-btn, .sp-header.has-search-nav .sp-header-user-icon {
+        margin: 0;
+    }
+    .sp-header-user-nav {
+        float: right;
+        margin: 4px 0 0;
+        
+    }
+
+    
+
+
+    .flexbox{
+        display: flex;
+    }
+    
+
+    .globalNav {
+        margin: 0 auto;
+        padding: 0 8px 0 0;
+        height: 120%;
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        text-align: center; 
+    }
+    
+    .globalNav li {
+        /* float: left;
+        border-right: 1px solid #DDD; */
+        display: inline-block;
+        min-width: 50px;
+        margin-right: 5px;
+    }
+
+    .globalNav li a {
+        /* display: block;
+        padding: 5px 10px;
+        text-decoration: none;
+        color: white;
+        background: rgb(197, 72, 34); */
+
+        display: block;
+        width: 100%;
+        text-decoration: none;
+        color: #555;
+        padding-bottom: 5px;
+    }
+    
+    .nav li.current{
+        　border-bottom: 3px solid #92D050;
+        }
+
+    .nav li:hover{
+        　color: #E7DA66;
+        　border-bottom: 3px solid #F0E475;
+        }    
+    
+    
+
+    
+    /*----------
+    ロゴ
+    ----------*/
+    .logo-login{
+        position: relative;
+    }
+
+    .header-wrapper{
+        display: block;
+    }
+
+    .toplogo{
+        width: 50%;
+        height: auto;
+    }
+
+
+
+    /*----------
+    ログインボタン
+    ----------*/
+    .sp-header-btn {
+        position: absolute;
+        top:20%;
+        left: 60%;
+        display: block;
+        width: 120px;
+        margin: 0 10px 0px 10;
+        padding: 0 16px;
+        border-radius: 40px;
+        text-align: center;
+        line-height: 30px;
+        
+    }
+    .btn-red {
+        background: #ea352d;
+        border: 1px solid #ea352d;
+        color: #fff;
+    }
+
+
+    /*----------
+    ユーザー一覧
+    ----------*/
+    .user-list{
+        display: -webkit-flex;
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap;
+    }
+    .user-item{
+        width: 50%;
+        padding: 5px;
+
+    }
+
+
+    /*----------
+    profile
+    ----------*/
+    .sentaku{
+        padding: 40px 0;
+    }
+    
+    .flexbox {
+        margin: 0 auto;
+        display: -webkit-flex;
+        display: flex;
+    }
+    
+    .works__item{
+        width: 100%;
+    }
+    .btn{
+        width: 100%;
+        padding: 17px;
+        font-size: 1.6rem;
+    }
+
+}
+
