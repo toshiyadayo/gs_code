@@ -168,7 +168,7 @@ img{
         /*----------
         ヘッダー
         ----------*/
-    .header{
+        .header{
         padding:10px;
         background: rgb(235, 150, 135);
     }
@@ -319,6 +319,31 @@ img{
         padding: 17px;
         font-size: 1.6rem;
     }
+
+    /*----------
+    chat
+    ----------*/
+    .message-content {
+        padding: 24px ;
+        background: #fff;
+    }
+
+    .textarea-default{
+        display: block;
+        margin: 10px;
+        width: 100%;
+        max-width: 100%;
+        min-height: 100px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        background: #fff;
+        font-size: 16px;
+    }
+
+
+
+
+
 
 }
 

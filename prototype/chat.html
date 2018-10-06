@@ -18,7 +18,7 @@
                 </section>
             </div>
             <div class="sp-header-user-nav clearfix">
-                <a href="http://localhost/sun/login.html" class="sp-header-btn btn-red">ログイン</a>
+                <a href="http://localhost/prototype/login.html" class="sp-header-btn btn-red">ログイン</a>
             </div>
         </div>
 
@@ -61,14 +61,18 @@
     </header>
 
 <!-- コンテンツ表示画面 -->
-<div>
+<div class="message-content">
     <!-- メッセージ表示部分 -->
-    <div id ="output" style="overflow:auto;height:400px;border:1px solid rgb(6, 6, 6);"></div> 
-    <div>名前<input type="text" id="username"></div><br>
-    <div>本文<textarea id="text" cols="25" rows="3"></textarea> 
-    <button id="send">送信</button> 
-    </div>
+    <div id ="output" style="overflow:auto;height:400px;border:1px solid rgb(150, 147, 147);"></div> 
+    <!-- <div>名前<input type="text" id="username"></div><br> -->
     
+    <!-- テキスト入力 -->
+    <div><textarea id="text" class="textarea-default"></textarea> 
+    
+    <!-- ボタン入力 -->
+    <div>
+        <button id="send" class="btn">コメントする</button> 
+    </div>
 </div>
 
 

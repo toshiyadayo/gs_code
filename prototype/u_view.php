@@ -46,7 +46,7 @@ if ($status == false) {
                 </section>
             </div>
             <div class="sp-header-user-nav clearfix">
-                <a href="http://localhost/sun/login.html" class="sp-header-btn btn-red">ログイン</a>
+            <a href="http://localhost/prototype/login.html" class="sp-header-btn btn-red">ログイン</a>
             </div>
         </div>
 
