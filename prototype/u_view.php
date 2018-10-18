@@ -7,7 +7,7 @@ $id = $_GET["id"];
 include "funcs.php"; 
 $pdo = db_con();
 
-//3.SELECT * FROM nee_an_table WHERE id=:id;
+//3.SELECT * FROM nee_an_table WHERE id=:id; データを全部持ってきてる
 $sql = "SELECT * FROM nee_db_table WHERE id=:id";
 $stmt = $pdo->prepare($sql);
 $stmt->bindValue(':id', $id, PDO::PARAM_STR);  //Integer（数値の場合 PDO::PARAM_INT)
@@ -96,7 +96,7 @@ if ($status == false) {
 
     <fieldset>
     <label>プロフィール写真：
-    
+    <img src="images/test/<?=$row["fname"]?>">
     <input type="file" name="file_upload" >
     <input type="submit" value="アップロード">
     </label>

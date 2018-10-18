@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/oka.css">
+
 </head>
 <body>
     <header class="header" class="sp-header visible-sp">
@@ -16,52 +18,38 @@
                     <a href="index.html"><img src="images/icon.jpg" alt="TOP画像"></a>
                 </section>
             </div>
-            <div class="sp-header-user-nav clearfix">
-                <a href="http://localhost/prototype/login.html" class="sp-header-btn btn-red">ログイン</a>
-            </div>
         </div>
 
-
-        <nav class="sp-header-nav">
-            <ul class="globalNav">
-                <li class="current">
-                    <a href="index.html">
-                        <strong>いま話せる</strong>
-                    </a>
-                </li>
-                <li>
-                    <a href="index.html">
-                        <strong>人気者 </strong>
-                    </a>
-                </li>
-                <li>
-                    <a href="index.html">
-                        <strong>最新</strong>
-                    </a>
-                </li>
-                <li>
-                        <a href="index.html">
-                            <strong>恋愛系</strong>
-                        </a>
-                    </li>
-                    <li>
-                            <a href="index.html">
-                                <strong>人間関係</strong>
-                            </a>
-                        </li>
-                        <li>
-                                <a href="index.html">
-                                    <strong>家族系</strong>
-                                </a>
-                            </li>
-            </ul>
-
-        </nav>
     </header>
+    
+    <div class="login-content1">
+        <p class="text-center">アカウントをお持ちでない方はコチラ</p>
+        <a href="register.php" class="btn btn-orange">新規会員登録する</a><br>
+    </div>
+    
+    
 
-    <h3 class="text-center">ログインする</h3>        
-
-    <a href="register.php" class="btn text-center">ログインする</a><br>
-    <a href="register.php" class="btn text-center">新規会員登録する</a><br>
+    <form action="login_act.php" method="post">
+            <div class="login-content2">
+                <label for="email"></label>    
+                <input type="text" name="email"  placeholder="メールアドレス" class="input-default"/>
+            </div>
+            <div class="login-content2">
+                    <label for="pass"></label>    
+                    <input type="password" name="pass"  placeholder="パスワード" class="input-default"/>
+            </div>
+            <div class="login-content3">
+                <div class="form-group">
+                    <input type="submit" value="LOGIN" class="btn btn-orange"/> 
+                </div>
+            </div>
+    </form>
+    
+    <!-- <form name="form1" action="login_act.php" method="post">
+        ID:<input type="text" name="email" /><br>
+        PW:"<input type="password" name="pass" /><br>
+        <input type="submit" value="LOGIN" class="btn text-center"/>
+    </form> -->
+    <br>
 </body>
 </html>

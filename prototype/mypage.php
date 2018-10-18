@@ -1,23 +1,38 @@
+<?php
+session_start();
+
+include "funcs.php";
+chkSsid();
+$pdo = db_con();
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/oka.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/oka.css">
 </head>
+
 <body>
     <header class="header" class="sp-header visible-sp">
         <div class="logo-login">
-            <div class="header-wrapper" >
+            <div class="header-wrapper">
                 <section class="toplogo">
-                    <a href="index.html"><img src="images/icon.jpg" alt="TOP画像"></a>
+                    <a href="index2.php"><img src="images/icon.jpg" alt="TOP画像"></a>
                 </section>
             </div>
-            <div class="sp-header-user-nav clearfix">
-                <a href="http://localhost/prototype/login.html" class="sp-header-btn btn-red">ログイン</a>
+            <div class="sp-header-user-nav">
+            <a href="mypage.php"><img src="images/test/<?=$_SESSION["fname"]?>"></a>        
+            </div>
+            <div>
+            <a class="" href="logout.php">ログアウト</a>
+            <?=$_SESSION["name"]?>さん、こんにちは！
             </div>
         </div>
 
@@ -58,14 +73,6 @@
 
         </nav>
     </header>
-     
-    <div class="text-center">   
-    <img src="images/user.jpg"  width="120" height="120" class="profile-picture">
-    <h2>山田花子</h2>
-    <h3>自己紹介</h3>
-    <h4>価格 3,000円/30分</h4>
-    </div>     
-    <a href="tools.html" class="btn btn-orange text-center ">購入画面に進む</a>
 
-</body>
-</html>
+    <P>my ページ</p>
+    

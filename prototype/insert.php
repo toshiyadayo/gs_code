@@ -61,7 +61,7 @@ if(is_uploaded_file($_FILES['file_upload']['tmp_name'])){
   exit;
 }
 
-header("Location: register.php");//phpのheader関数でリダイレクトさせる、成功していたらindexに戻す
+header("Location: index2.php");//phpのheader関数でリダイレクトさせる、成功していたらindexに戻す
 exit;
 }
 

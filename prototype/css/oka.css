@@ -81,14 +81,15 @@ img{
 
 /*始める*/
 .btn{
-    display: block;
-    width: 120px;
-    margin: auto;
-    padding: 21px 0;
-    border: none;
-    background-color: rgb(190, 186, 186);
-    color: #fff;
-    font-size: 0.9rem;
+    display: block; 
+    width: 100%;
+    line-height: 48px;
+    font-size: 14px;
+    border: 1px solid transparent;
+    -webkit-transition: all ease-out .3s;
+    transition: all ease-out .3s;
+    cursor: pointer;
+    text-align: center;
 }
 
 .btn2{
@@ -164,14 +165,17 @@ img{
     /*----------
     （TOPページ）
     ----------*/
+    body {background-color: #FFF0F5}
 
-        /*----------
+    /*----------
         ヘッダー
-        ----------*/
-        .header{
-        padding:10px;
-        background: rgb(235, 150, 135);
+    ----------*/
+    .header{
+    padding:10px;
+    background: linear-gradient(-45deg, rgb(240, 187, 95), rgb(238, 96, 96),
+    rgb(255, 146, 255), rgb(157, 157, 250),rgb(203, 141, 248));
     }
+    
     .sp-header-nav{
     -webkit-overflow-scrolling: touch;
     position: relative;
@@ -189,13 +193,6 @@ img{
         
     }
 
-    
-
-
-    .flexbox{
-        display: flex;
-    }
-    
 
     .globalNav {
         margin: 0 auto;
@@ -238,8 +235,29 @@ img{
         　border-bottom: 3px solid #F0E475;
         }    
     
-    
+    /*----------
+    body
+    ----------*/    
 
+    .card{
+    position: absolute;
+    top:30%;
+    left: 4%;
+    display: block;
+    height: 250px;
+    width: 350px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #ccc;
+    }
+    .card-img{
+        border-radius: 5px 5px 5px 5px;
+        margin: 10px;
+        max-width: 100%;
+        width: 100px;
+        height: 100px;  
+    }
+    
     
     /*----------
     ロゴ
@@ -273,14 +291,43 @@ img{
         border-radius: 40px;
         text-align: center;
         line-height: 30px;
+        background: #fabf9d;
+        border: 1px solid #fabf9d;
+        color: #fff;
         
     }
-    .btn-red {
-        background: #ea352d;
-        border: 1px solid #ea352d;
+    .btn-orange {
+        background: #fcb08d;
+        border: 1px solid #c5a795;
         color: #fff;
     }
 
+    .login-content1{
+        padding: 24px 24px 5px 24px;
+    }
+
+    .login-content2{
+        padding: 5px 24px 5px 24px;
+    }
+
+    .login-content3{
+        padding: 24px;
+    }
+
+    .input-default {
+        height: 48px;
+        width: 100%;
+        padding: 10px 16px 8px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        background: #fff;
+        line-height: 1.5;
+        font-size: 16px;
+    }
+
+        
+
+    
 
     /*----------
     ユーザー一覧
@@ -299,7 +346,7 @@ img{
 
 
     /*----------
-    profile
+    index
     ----------*/
     .sentaku{
         padding: 40px 0;
@@ -314,23 +361,33 @@ img{
     .works__item{
         width: 100%;
     }
-    .btn{
-        width: 100%;
-        padding: 17px;
-        font-size: 1.6rem;
+
+     /*----------
+    index
+    ----------*/
+    .profile-picture{
+        
     }
+    
 
     /*----------
     chat
     ----------*/
+    
+    
     .message-content {
         padding: 24px ;
         background: #fff;
     }
 
+    .message-content2 {
+        padding: 0 24px;
+        background: #fff;
+    }
+
     .textarea-default{
         display: block;
-        margin: 10px;
+        margin: 10px 0;
         width: 100%;
         max-width: 100%;
         min-height: 100px;
@@ -340,7 +397,10 @@ img{
         font-size: 16px;
     }
 
-
+    .login-form-inner:first-child {
+        padding: 24px 32px;
+        border: #ccc;
+    }
 
 
 

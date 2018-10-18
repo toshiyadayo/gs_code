@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+include "funcs.php";
+chkSsid();
+$pdo = db_con();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,14 +25,18 @@
 </head>
 <body>
     <header class="header" class="sp-header visible-sp">
-        <div class="logo-login">
-            <div class="header-wrapper" >
+    <div class="logo-login">
+            <div class="header-wrapper">
                 <section class="toplogo">
-                    <a href="index.html"><img src="images/icon.jpg" alt="TOP画像"></a>
+                    <a href="index2.php"><img src="images/icon.jpg" alt="TOP画像"></a>
                 </section>
             </div>
-            <div class="sp-header-user-nav clearfix">
-                <a href="http://localhost/prototype/login.html" class="sp-header-btn btn-red">ログイン</a>
+            <div class="sp-header-user-nav">
+            <a href="mypage.php"><img src="images/test/<?=$_SESSION["fname"]?>"></a>        
+            </div>
+            <div>
+            <a class="" href="logout.php">ログアウト</a>
+            <?=$_SESSION["name"]?>さん、こんにちは！
             </div>
         </div>
 
@@ -76,7 +89,7 @@
           <div id="their-videos"></div>
           <div>
             <label id="my-label"></label>
-            <video id="my-video" muted="true" autoplay playsinline style="width: 100%" ></video>
+            <video id="my-video" muted="true" autoplay playsinline style="width:30%" ></video>
           </div>
         </div>
 
@@ -105,7 +118,7 @@
           <div id="step2">
             <form id="make-call" class="pure-form">
               <input type="hidden"  id="join-room">
-              <button class="pure-button pure-button-success" type="submit"　class="btn">トークを開始する</button>
+              <button class="pure-button pure-button-success btn" type="submit">トークを開始する</button>
             </form>
           </div>
           <!-- <p>Your id: <span id="my-id">...</span></p> -->
@@ -113,7 +126,7 @@
           <!-- Call in progress -->
           <div id="step3">
             <!-- <p>Currently in room <span id="room-id">...</span></p> -->
-            <!-- <p><a href="#" class="pure-button pure-button-error" id="end-call">End call</a></p> -->
+            <p><a href="#" class="pure-button pure-button-error btn" id="end-call">End call</a></p>
           </div>
         </div>
       </div>
