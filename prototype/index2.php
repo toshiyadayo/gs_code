@@ -76,24 +76,80 @@ $pdo = db_con();
     </header>
                     
                 
-    ここのdivをなおすところから！
-    <div class="container">
-        <div class="item">
-            <div class="item"><a href="profile.php"><img class="card-img" src="images/love.jpg"></a></div>
+    
+    <div class="card">
+        <div class="container">
+            <div class="item"><a href="profile2.php"><img class="card-img" src="images/love.jpg"></a></div>
             <div class="item"><h3>悩んだ時の駆け込み寺</h3></div>
+            <div class="balloon1 child"><p>こんにちは。これは例です。</p></div>
         </div>    
-        <div class="balloon1"><p>こんにちは。これは例です。</p></div>
+        
     </div>
 
-    <div class="container">
-        <div class="item"><a href="profile.php"><img class="card-img" src="images/love.jpg"></a></div>
-        <div class="item">悩んだ時の駆け込み寺</div>
-    </div>         
-               
-    <div class="container">
-        <div class="item"><a href="profile.php"><img class="card-img" src="images/love.jpg"></a></div>
-        <div class="item">悩んだ時の駆け込み寺</div>
-    </div>          
+    <div>
+        <div class="container">
+            <div class="item"><a href="profile2.php"><img class="card-img" src="images/love.jpg"></a></div>
+            <div class="item"><h3>悩んだ時の駆け込み寺</h3></div>
+            <div class="balloon1"><p>テキーラが飲みたい！</p></div>
+        </div>    
+        
+    </div>
+
+    <div>
+        <div class="container">
+            <div class="item"><a href="profile2.php"><img class="card-img" src="images/love.jpg"></a></div>
+            <div class="item"><h3>悩んだ時の駆け込み寺</h3></div>
+            <div class="balloon1"><p>こんにちは。これは例です。</p></div>
+        </div>    
+        
+    </div>
+
+    <div>
+        <div class="container">
+            <div class="item"><a href="profile2.php"><img class="card-img" src="images/love.jpg"></a></div>
+            <div class="item"><h3>悩んだ時の駆け込み寺</h3></div>
+            <div class="balloon1"><p>テキーラが飲みたい！</p></div>
+        </div>    
+        
+    </div>
+
+    <div>
+        <div class="container">
+            <div class="item"><a href="profile2.php"><img class="card-img" src="images/love.jpg"></a></div>
+            <div class="item"><h3>悩んだ時の駆け込み寺</h3></div>
+            <div class="balloon1"><p>テキーラが飲みたい！</p></div>
+        </div>    
+        
+    </div>
+
+    <div>
+        <div class="container">
+            <div class="item"><a href="profile2.php"><img class="card-img" src="images/love.jpg"></a></div>
+            <div class="item"><h3>悩んだ時の駆け込み寺</h3></div>
+            <div class="balloon1"><p>テキーラが飲みたい！</p></div>
+        </div>    
+        
+    </div>
+
+    <div>
+        <div class="container">
+            <div class="item"><a href="profile2.php"><img class="card-img" src="images/love.jpg"></a></div>
+            <div class="item"><h3>悩んだ時の駆け込み寺</h3></div>
+            <div class="balloon1"><p>テキーラが飲みたい！</p></div>
+        </div>    
+        
+    </div>
+
+    <div>
+        <div class="container">
+            <div class="item"><a href="profile2.php"><img class="card-img" src="images/love.jpg"></a></div>
+            <div class="item"><h3>悩んだ時の駆け込み寺</h3></div>
+            <div class="balloon1"><p>テキーラが飲みたい！</p></div>
+        </div>    
+        
+    </div>
+    
+        
 
                 <!-- <div class="flexbox">
                     <ul style="list-style:none;" class="user-list">
@@ -132,5 +188,5 @@ $pdo = db_con();
                     </ul>
                 </div> -->
         
-                </body>
+    </body>
 </html>

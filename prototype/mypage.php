@@ -27,8 +27,8 @@ $pdo = db_con();
                     <a href="index2.php"><img src="images/icon.jpg" alt="TOP画像"></a>
                 </section>
             </div>
-            <div class="sp-header-user-nav">
-            <a href="mypage.php"><img src="images/test/<?=$_SESSION["fname"]?>"></a>        
+            <div class="sp-header-user-img">
+            <a href="mypage.php"><img src="images/test/<?=$_SESSION["fname"]?>" width="50" height="50"></a>      
             </div>
             <div>
             <a class="" href="logout.php">ログアウト</a>
