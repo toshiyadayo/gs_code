@@ -30,6 +30,8 @@ if( $val["id"] != "" ){
   $_SESSION["chk_ssid"]  = session_id();//セッションIDを、セッションに持たせるログインできたときだけ、値を生成している
   $_SESSION["kanri_flg"] = $val['kanri_flg'];
   $_SESSION["name"]      = $val['name'];
+  $_SESSION["fname"]      = $val['fname'];
+
   header("Location: index2.php");
 }else{
   //logout処理を経由して全画面へ

@@ -28,9 +28,8 @@ $pdo = db_con();
                 </section>
             </div>
 
-            <div class="sp-header-user-nav">
-            <!-- <p><?=$_SESSION["fname"]?></p>         -->
-            <a href="mypage.php"><p><img src="images/test/<?=$_SESSION["fname"]?>"></a>      
+            <div class="sp-header-user-img">
+            <a href="mypage.php"><img src="images/test/<?=$_SESSION["fname"]?>" width="50" height="50"></a>      
             </div>
             <div>
             <a class="" href="logout.php">ログアウト</a>
@@ -75,33 +74,26 @@ $pdo = db_con();
 
         </nav>
     </header>
-    
-
-
-
-    <section >
+                    
                 
-                
-    <section class="card">
-        <img class="card-img" src="images/love.jpg" alt="">
-        <div class="card-content">
-            <h1 class="card-title">Webクリエイターボックス</h1>
-            <p class="card-text">WebデザインやWebサイト制作、最新のWeb業界情報などを紹介していくサイト。</p>
-        </div>
-        <div class="card-link">
-            <a href="http://webcreatorbox.com/about">About</a>
-            <a href="http://webcreatorbox.com/">Website</a>
-        </div>
-    </section>
-
-    <div class="card">
-        <a href="profile.php"><img class="card-img" src="images/love.jpg"></a>
-        <h1>悩んだ時の駆け込み寺</h1>
+    ここのdivをなおすところから！
+    <div class="container">
+        <div class="item">
+            <div class="item"><a href="profile.php"><img class="card-img" src="images/love.jpg"></a></div>
+            <div class="item"><h3>悩んだ時の駆け込み寺</h3></div>
+        </div>    
+        <div class="balloon1"><p>こんにちは。これは例です。</p></div>
     </div>
 
+    <div class="container">
+        <div class="item"><a href="profile.php"><img class="card-img" src="images/love.jpg"></a></div>
+        <div class="item">悩んだ時の駆け込み寺</div>
+    </div>         
                
-               
-                
+    <div class="container">
+        <div class="item"><a href="profile.php"><img class="card-img" src="images/love.jpg"></a></div>
+        <div class="item">悩んだ時の駆け込み寺</div>
+    </div>          
 
                 <!-- <div class="flexbox">
                     <ul style="list-style:none;" class="user-list">
@@ -140,7 +132,5 @@ $pdo = db_con();
                     </ul>
                 </div> -->
         
-                
-    </section>
-</body>
+                </body>
 </html>

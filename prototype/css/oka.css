@@ -160,7 +160,6 @@ img{
 
 
 
-
 @media screen and (max-width:640px){
     /*----------
     （TOPページ）
@@ -184,13 +183,14 @@ img{
     line-height: 42px;
     -webkit-overflow-scrolling: touch;
     }
+
     .sp-header.has-search-nav .sp-header-btn, .sp-header.has-search-nav .sp-header-user-icon {
         margin: 0;
     }
+
     .sp-header-user-nav {
         float: right;
-        margin: 4px 0 0;
-        
+        margin: 4px 0 0; 
     }
 
 
@@ -235,28 +235,6 @@ img{
         　border-bottom: 3px solid #F0E475;
         }    
     
-    /*----------
-    body
-    ----------*/    
-
-    .card{
-    position: absolute;
-    top:30%;
-    left: 4%;
-    display: block;
-    height: 250px;
-    width: 350px;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px #ccc;
-    }
-    .card-img{
-        border-radius: 5px 5px 5px 5px;
-        margin: 10px;
-        max-width: 100%;
-        width: 100px;
-        height: 100px;  
-    }
     
     
     /*----------
@@ -275,8 +253,7 @@ img{
         height: auto;
     }
 
-
-
+    
     /*----------
     ログインボタン
     ----------*/
@@ -296,6 +273,7 @@ img{
         color: #fff;
         
     }
+
     .btn-orange {
         background: #fcb08d;
         border: 1px solid #c5a795;
@@ -325,9 +303,46 @@ img{
         font-size: 16px;
     }
 
-        
+    /*----------
+    ユーザーアイコン
+    ----------*/
 
+    .sp-header-user-img{
+        position: absolute;
+        top:5%;
+        left: 75%;
+        display: block;
+        width: 120px;
+        margin: 0 10px 0px 10;
+        padding: 0 16px;
+        border-radius: 40px;
+        text-align: center;
+        line-height: 30px;
+    }    
+
+    /*----------
+    body
+    ----------*/    
+
+    .container{
+    display: flex;
+    margin: 10px 15px 30px;    
+    top:30%;
+    left: 4%;
+    height: 250px;
+    width: 350px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #ccc;
+    }
     
+    .card-img{
+    border-radius: 5px 5px 5px 5px;
+    margin: 10px;
+    max-width: 100%;
+    width: 100px;
+    height: 100px;  
+    }
 
     /*----------
     ユーザー一覧
