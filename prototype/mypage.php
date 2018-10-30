@@ -15,7 +15,7 @@ $pdo = db_con();
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Document</title>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/oka.css">
 </head>
 
@@ -28,7 +28,7 @@ $pdo = db_con();
                 </section>
             </div>
             <div class="sp-header-user-img">
-            <a href="mypage.php"><img src="images/test/<?=$_SESSION["fname"]?>" width="50" height="50"></a>      
+            <a href="mypage.php"><img src="images/test/<?=$_SESSION["fname"]?>" width="50" height="50" class="icon2"></a>      
             </div>
             <div>
             <a class="" href="logout.php">ログアウト</a>
@@ -74,5 +74,15 @@ $pdo = db_con();
         </nav>
     </header>
 
-    <P>my ページ</p>
+    <div class="user-button1">
+        <a href="service.php"><button class="user-button2">出品する</button></a>
+    </div> 
+
+    <div class="user-button1">
+        <a href="u_view.php"><button class="user-button2">本人情報を変更する</button></a>
+    </div> 
+
+
+</body>
+</html>    
     

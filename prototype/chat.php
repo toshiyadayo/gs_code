@@ -14,8 +14,15 @@ $pdo = db_con();
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Chatアプリ</title>
-<link rel="stylesheet" href="css/style.css">
+<!-- <link rel="stylesheet" href="css/style.css"> -->
+<link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/oka.css">
+
+<style type="text/css">
+    a { text-decoration:none; }
+    a:link { color : #f7f5f5; }
+    a:visited { color : #f7f5f5; }
+    </style>
 </head>
 
 <body>
@@ -27,7 +34,7 @@ $pdo = db_con();
                 </section>
             </div>
             <div class="sp-header-user-img">
-            <a href="mypage.php"><img src="images/test/<?=$_SESSION["fname"]?>" width="50" height="50"></a>      
+            <a href="mypage.php"><img src="images/test/<?=$_SESSION["fname"]?>" width="50" height="50" class="icon2"></a>      
             </div>
             <div>
             <a class="" href="logout.php">ログアウト</a>
@@ -72,23 +79,50 @@ $pdo = db_con();
         </nav>
     </header>
 
-<!-- コンテンツ表示画面 -->
-<div class="message-content">
-    <!-- メッセージ表示部分 -->
-    <div id ="output" style="overflow:auto;height:400px;border:1px solid rgb(150, 147, 147);"></div> 
-    <input type="hidden" id="username" value="test">    
-</div>
+<div class="tool-box">
+        <div class="tool-box-child2">
+        <p class="tool-box-name">チャット</p></a>
+        </div>
+        <div class="tool-box-child1">
+        <a href="call.php"><p class="tool-box-name">音声通話</p>
+        </div>
+        <div class="tool-box-child1">
+            <a href="talk.php"><p class="tool-box-name">TV通話</p></a>
+        </div>
+    </div>
 
-<div class="message-content2">
-    <!-- テキスト入力 -->
-    <div><textarea id="text" class="textarea-default"></textarea> 
-    
-    <!-- ボタン入力 -->
-    <div>
-        <button id="send" class="btn">コメントする</button> 
+<!-- <div class="tool-box">
+    <div class="tool-box-child2">
+        <p>チャット</p>
+    </div>
+    <div class="tool-box-child1">
+        <a href="call.php"><p>音声通話</p></a>
+    </div>
+    <div class="tool-box-child1">
+        <a href="talk.php"><p>TV通話</p></a>
+    </div>
+</div> -->
+<!-- コンテンツ表示画面 -->
+<div class="chat1">
+    <div class="message-content">
+        <!-- メッセージ表示部分 -->
+        <div id ="output" class="message-box"></div> 
+        <input type="hidden" id="username" value="test">    
     </div>
 </div>
 
+<div class="chat2">
+    <div class="message-content2">
+        <!-- テキスト入力 -->
+        <div><textarea id="text" class="textarea-default"></textarea>    
+    </div>
+</div>
+<div class="chat3">
+    <!-- ボタン入力 -->
+    <div>
+        <button id="send" class="btn-chat">コメントする</button> 
+    </div>
+</div>
 
 
 <!--/ コンテンツ表示画面 -->

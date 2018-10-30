@@ -15,7 +15,8 @@ $pdo = db_con();
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Document</title>
-        <link rel="stylesheet" href="css/style.css">
+        <!-- <link rel="stylesheet" href="css/style.css"> -->
+        <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/oka.css">
 </head>
 
@@ -29,7 +30,7 @@ $pdo = db_con();
             </div>
 
             <div class="sp-header-user-img">
-            <a href="mypage.php"><img src="images/test/<?=$_SESSION["fname"]?>" width="50" height="50"></a>      
+            <a href="mypage.php"><img src="images/test/<?=$_SESSION["fname"]?>" width="50" height="50" class="icon2"></a>      
             </div>
             <div>
             <a class="" href="logout.php">ログアウト</a>
@@ -75,118 +76,205 @@ $pdo = db_con();
         </nav>
     </header>
                     
-                
     
+
     <div class="card">
-        <div class="container">
-            <div class="item"><a href="profile2.php"><img class="card-img" src="images/love.jpg"></a></div>
-            <div class="item"><h3>悩んだ時の駆け込み寺</h3></div>
-            <div class="balloon1 child"><p>こんにちは。これは例です。</p></div>
+        <div class="service-img"> 
+        <a href="profile2.php?id=a"><img src="images/love.jpg"></a>
+        </div>
+
+        <div class="service-detail">
+            <div>
+                <p class="service-title">悩んだ時の駆け込み寺</p>
+            </div>
+            <div>
+                <div class ="service-user-info">
+                    <img src="images/user.jpg" class="user-icon">
+                    <p class =name>saki</p>
+                </div>
+            </div>
+            <div>
+                <div class="box">
+                    <p>お悩み</p>
+                </div>
+                <div class="box">
+                    <p>お悩み</p>
+                </div>
+                <div class="box">
+                    <p>お悩み</p>
+                </div>
+                <div class="box">
+                    <p>お悩み</p>
+                </div>
+                <div class="box">
+                    <p>お悩み</p>
+                </div>
+                <div class="box">
+                    <p>お悩み</p>
+                </div>
+            </div>
         </div>    
-        
+        <div class ="service-status">
+            <div class="service-price">
+                <p class="price">10分/1,000円</p>
+            </div>
+            <div>
+                <div class="service-star">
+                    <div>
+                        <img src="images/star.jpg" class="star-icon">
+                        <img src="images/star.jpg" class="star-icon">
+                        <img src="images/star.jpg" class="star-icon">
+                        <img src="images/star.jpg" class="star-icon">
+                        <img src="images/star.jpg" class="star-icon">
+                    </div>
+                    <div>
+                        <p class="star-count">(55件)</p>
+                    </div>
+                    <div>
+                        <img src="images/heart.jpg" class="heart-icon">
+                    </div>    
+                    <div>
+                        <p class="heart-count">121</p>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <div class="balloon1 child"><p>はじめまして！</p>
+        </div>   
     </div>
 
-    <div>
-        <div class="container">
-            <div class="item"><a href="profile2.php"><img class="card-img" src="images/love.jpg"></a></div>
-            <div class="item"><h3>悩んだ時の駆け込み寺</h3></div>
-            <div class="balloon1"><p>テキーラが飲みたい！</p></div>
+     <div class="card">
+        <div class="service-img"> 
+        <a href="profile2.php?id=a"><img src="images/love.jpg"></a>
+        </div>
+
+        <div class="service-detail">
+            <div>
+                <p class="service-title">悩んだ時の駆け込み寺</p>
+            </div>
+            <div>
+                <div class ="service-user-info">
+                    <img src="images/user.jpg" class="user-icon">
+                    <p class =name>saki</p>
+                </div>
+            </div>
+            <div>
+                <div class="box">
+                    <p>お悩み</p>
+                </div>
+                <div class="box">
+                    <p>お悩み</p>
+                </div>
+                <div class="box">
+                    <p>お悩み</p>
+                </div>
+                <div class="box">
+                    <p>お悩み</p>
+                </div>
+                <div class="box">
+                    <p>お悩み</p>
+                </div>
+                <div class="box">
+                    <p>お悩み</p>
+                </div>
+            </div>
         </div>    
-        
+        <div class ="service-status">
+            <div class="service-price">
+                <p class="price">10分/1,000円</p>
+            </div>
+            <div>
+                <div class="service-star">
+                    <div>
+                        <img src="images/star.jpg" class="star-icon">
+                        <img src="images/star.jpg" class="star-icon">
+                        <img src="images/star.jpg" class="star-icon">
+                        <img src="images/star.jpg" class="star-icon">
+                        <img src="images/star.jpg" class="star-icon">
+                    </div>
+                    <div>
+                        <p class="star-count">(55件)</p>
+                    </div>
+                    <div>
+                        <img src="images/heart.jpg" class="heart-icon">
+                    </div>    
+                    <div>
+                        <p class="heart-count">121</p>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <div class="balloon1 child"><p>はじめまして！</p>
+        </div>   
     </div>
 
-    <div>
-        <div class="container">
-            <div class="item"><a href="profile2.php"><img class="card-img" src="images/love.jpg"></a></div>
-            <div class="item"><h3>悩んだ時の駆け込み寺</h3></div>
-            <div class="balloon1"><p>こんにちは。これは例です。</p></div>
+     <div class="card">
+        <div class="service-img"> 
+        <a href="profile2.php?id=a"><img src="images/love.jpg"></a>
+        </div>
+
+        <div class="service-detail">
+            <div>
+                <p class="service-title">悩んだ時の駆け込み寺</p>
+            </div>
+            <div>
+                <div class ="service-user-info">
+                    <img src="images/user.jpg" class="user-icon">
+                    <p class =name>saki</p>
+                </div>
+            </div>
+            <div>
+                <div class="box">
+                    <p>お悩み</p>
+                </div>
+                <div class="box">
+                    <p>お悩み</p>
+                </div>
+                <div class="box">
+                    <p>お悩み</p>
+                </div>
+                <div class="box">
+                    <p>お悩み</p>
+                </div>
+                <div class="box">
+                    <p>お悩み</p>
+                </div>
+                <div class="box">
+                    <p>お悩み</p>
+                </div>
+            </div>
         </div>    
-        
+        <div class ="service-status">
+            <div class="service-price">
+                <p class="price">10分/1,000円</p>
+            </div>
+            <div>
+                <div class="service-star">
+                    <div>
+                        <img src="images/star.jpg" class="star-icon">
+                        <img src="images/star.jpg" class="star-icon">
+                        <img src="images/star.jpg" class="star-icon">
+                        <img src="images/star.jpg" class="star-icon">
+                        <img src="images/star.jpg" class="star-icon">
+                    </div>
+                    <div>
+                        <p class="star-count">(55件)</p>
+                    </div>
+                    <div>
+                        <img src="images/heart.jpg" class="heart-icon">
+                    </div>    
+                    <div>
+                        <p class="heart-count">121</p>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <div class="balloon1 child"><p>はじめまして！</p>
+        </div>   
     </div>
 
-    <div>
-        <div class="container">
-            <div class="item"><a href="profile2.php"><img class="card-img" src="images/love.jpg"></a></div>
-            <div class="item"><h3>悩んだ時の駆け込み寺</h3></div>
-            <div class="balloon1"><p>テキーラが飲みたい！</p></div>
-        </div>    
-        
-    </div>
 
-    <div>
-        <div class="container">
-            <div class="item"><a href="profile2.php"><img class="card-img" src="images/love.jpg"></a></div>
-            <div class="item"><h3>悩んだ時の駆け込み寺</h3></div>
-            <div class="balloon1"><p>テキーラが飲みたい！</p></div>
-        </div>    
-        
-    </div>
-
-    <div>
-        <div class="container">
-            <div class="item"><a href="profile2.php"><img class="card-img" src="images/love.jpg"></a></div>
-            <div class="item"><h3>悩んだ時の駆け込み寺</h3></div>
-            <div class="balloon1"><p>テキーラが飲みたい！</p></div>
-        </div>    
-        
-    </div>
-
-    <div>
-        <div class="container">
-            <div class="item"><a href="profile2.php"><img class="card-img" src="images/love.jpg"></a></div>
-            <div class="item"><h3>悩んだ時の駆け込み寺</h3></div>
-            <div class="balloon1"><p>テキーラが飲みたい！</p></div>
-        </div>    
-        
-    </div>
-
-    <div>
-        <div class="container">
-            <div class="item"><a href="profile2.php"><img class="card-img" src="images/love.jpg"></a></div>
-            <div class="item"><h3>悩んだ時の駆け込み寺</h3></div>
-            <div class="balloon1"><p>テキーラが飲みたい！</p></div>
-        </div>    
-        
-    </div>
     
-        
-
-                <!-- <div class="flexbox">
-                    <ul style="list-style:none;" class="user-list">
-                        <li class="user-item">
-                            <a href="profile2.php?id=a">
-                            <img src="images/user.jpg" alt="ユーザー" width="120" height="120"/>
-                        </li>
-                        <li class="user-item">
-                                <a href="profile2.php?id=a">
-                                <img src="images/user.jpg" alt="ユーザー" width="120" height="120"/>
-                        </li>
-                        <li class="user-item">
-                                <a href="profile2.php?id=a">
-                                <img src="images/user.jpg" alt="ユーザー" width="120" height="120"/>
-                        </li>
-                        <li class="user-item">
-                                <a href="profile2.php?id=a">
-                                <img src="images/user.jpg" alt="ユーザー" width="120" height="120"/>
-                        </li>
-                        <li class="user-item">
-                                <a href="profile2.php?id=a">
-                                <img src="images/user.jpg" alt="ユーザー" width="120" height="120"/>
-                        </li>
-                        <li class="user-item">
-                                <a href="profile2.php?id=a">
-                                <img src="images/user.jpg" alt="ユーザー" width="120" height="120"/>
-                        </li>
-                        <li class="user-item">
-                                <a href="profile2.php?id=a">
-                                <img src="images/user.jpg" alt="ユーザー" width="120" height="120"/>
-                        </li>
-                        <li class="user-item">
-                                <a href="profile2.php?id=a">
-                                <img src="images/user.jpg" alt="ユーザー" width="120" height="120"/>
-                        </li>
-                    </ul>
-                </div> -->
         
     </body>
 </html>

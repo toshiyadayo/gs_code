@@ -22,11 +22,11 @@
 
     </header>
     
-    <div class="login-content1">
-        <p class="text-center">アカウントをお持ちでない方はコチラ</p>
-        <a href="register.php" class="btn btn-orange">新規会員登録する</a><br>
+    <p class="text-center">アカウントをお持ちでない方はコチラ</p>  
+    <div class="profile-button">
+          
+        <a href="register.php"><button class="btn-login">新規会員登録する</button></a>
     </div>
-    
     
 
     <form action="login_act.php" method="post">
@@ -38,11 +38,15 @@
                     <label for="pass"></label>    
                     <input type="password" name="pass"  placeholder="パスワード" class="input-default"/>
             </div>
-            <div class="login-content3">
+            <!-- <div class="login-content3">
                 <div class="form-group">
-                    <input type="submit" value="LOGIN" class="btn btn-orange"/> 
+                    <input type="submit" value="LOGIN" class="btn-login"/> 
                 </div>
-            </div>
+            </div> -->
+            <div class="profile-button">
+                    <input type="submit" value="LOGIN" class="btn-login"/>
+                </div>
+            
     </form>
     
     <!-- <form name="form1" action="login_act.php" method="post">

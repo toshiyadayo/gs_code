@@ -18,9 +18,17 @@ $pdo = db_con();
     <script type="text/javascript" src="//cdn.webrtc.ecl.ntt.com/skyway-latest.js"></script>
     <script type="text/javascript" src="../key.js"></script>
     <script type="text/javascript" src="script2.js"></script>
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- <link rel="stylesheet" href="css/style.css">  -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/oka.css">
+    
+    <style type="text/css">
+    a { text-decoration:none; }
+    a:link { color : #f7f5f5; }
+    a:visited { color : #f7f5f5; }
+    </style>
+</head>
 
 </head>
 <body>
@@ -32,7 +40,7 @@ $pdo = db_con();
                 </section>
             </div>
             <div class="sp-header-user-img">
-            <a href="mypage.php"><img src="images/test/<?=$_SESSION["fname"]?>" width="50" height="50"></a>      
+            <a href="mypage.php"><img src="images/test/<?=$_SESSION["fname"]?>" width="50" height="50" class="icon2"></a>      
             </div>
             <div>
             <a class="" href="logout.php">ログアウト</a>
@@ -79,7 +87,18 @@ $pdo = db_con();
     </header>
 
 
-    <center><h2>トーク画面</h2></center>
+    <div class="tool-box">
+        <div class="tool-box-child1">
+        <a href="chat.php"><p class="tool-box-name">チャット</p></a>
+        </div>
+        <div class="tool-box-child2">
+            <p class="tool-box-name">音声通話</p>
+        </div>
+        <div class="tool-box-child1">
+            <a href="talk.php"><p class="tool-box-name">TV通話</p></a>
+        </div>
+    </div>
+
 
    <div class="pure-g">
 

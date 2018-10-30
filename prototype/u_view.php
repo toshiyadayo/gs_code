@@ -1,4 +1,13 @@
 <?php
+//セッション
+session_start();
+
+include "funcs.php";
+chkSsid();
+$pdo = db_con();
+
+
+
 //1.GETでid値を取得
 $id = $_GET["id"];
 
